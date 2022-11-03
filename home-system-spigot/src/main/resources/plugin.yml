@@ -1,0 +1,17 @@
+name: HomeSystem
+main: de.joshizockt.homesystem.spigot.HomeSystemSpigot
+version: 1.0
+api-version: 1.19
+author: JoshiZockt_
+
+commands:
+  sethome:
+    description: Setze dein Home
+    aliases: [sh]
+  delhome:
+    description: Lösche ein Home
+    aliases: [dh]
+  home:
+    description: Teleportiere dich zu deinem Home
+  homes:
+    description: Zeige alle deine Homes

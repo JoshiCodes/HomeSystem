@@ -1,0 +1,50 @@
+{
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "homesystem",
+    "password": "securePasswordHere",
+    "database": "homesystem"
+  },
+  "permissions": {
+    "set": "homesystem.home.set",
+    "del": "homesystem.home.delete",
+    "tp": "homesystem.home.teleport",
+    "list": "homesystem.home.list",
+
+    "all": "homesystem.home.*"
+  },
+  "messages": {
+    "prefix": "&8[&6HomeSystem&8] &7",
+    "command": {
+      "set": {
+        "success": "&aDu hast das Home &e%0% &aerfolgreich gesetzt!",
+        "usage": "&cBitte benutze &e/sethome <Name>"
+      },
+      "del": {
+        "success": "&aDu hast das Home &e%0% &aerfolgreich gelöscht!",
+        "usage": "&cBitte benutze &e/delhome <Name>"
+      },
+      "tp": {
+        "success": "&aDu wurdest erfolgreich zu deinem Home teleportiert!",
+        "usage": "&cBitte benutze &e/home <Name>"
+      }
+    },
+    "homeCreated": "&aDu hast das Home &e%0% &aerfolgreich gesetzt!",
+    "allDeleted": "&aDu hast alle deine Homes erfolgreich gelöscht!",
+    "error": {
+      "noPermission": "&cDu hast keine Berechtigung diesen Befehl auszuführen!",
+      "noHome": "&cDu hast kein Home mit dem Namen &e%0% &cgesetzt!",
+      "homeExists": "&cDu hast bereits ein Home mit diesem Namen gesetzt!",
+      "nameTooLong": "&cDer Name deines Homes darf maximal %0% Zeichen lang sein!"
+    }
+  },
+  "gui": {
+    "title": "&aDeine Homes",
+    "item": {
+      "lore": [
+        "&7Klicke, um dich zum Home zu teleportieren"
+      ]
+    }
+  }
+}
